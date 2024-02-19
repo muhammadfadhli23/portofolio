@@ -43,7 +43,7 @@
 
     <!-- Hero Section -->
     <section class="jumbotron text-center">
-      <img src="img/profile.jpg" alt="profil Muhammad Fadhli" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/profile.jpg" alt="profil Muhammad Fadhli" width="200" class="rounded-circle img-thumbnail" data-tilt />
       <h1 class="display-4">Muhammad Fadhli</h1>
       <p class="lead fs-5"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -136,50 +136,50 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href=""> <img src="img/gallery/1.jpg" alt="" class="img-fluid gallery-img" /> </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/2.jpg" alt="" class="img-fluid gallery-img" />
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/3.jpg" alt="" class="img-fluid gallery-img" />
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/4.jpg" alt="" class="img-fluid gallery-img" />
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/5.jpg" alt="" class="img-fluid gallery-img" />
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/6.jpg" alt="" class="img-fluid gallery-img" />
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/7.jpg" alt="" class="img-fluid gallery-img" />
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/8.jpg" alt="" class="img-fluid gallery-img" />
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/9.jpg" alt="" class="img-fluid gallery-img" />
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 kotak">
             <a href="">
               <img src="img/gallery/10.jpg" alt="" class="img-fluid gallery-img" />
             </a>
@@ -303,6 +303,16 @@
       gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
       gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce.out" });
       gsap.from(".display-4", { duration: 1, x: -100, opacity: 0, ease: "back", delay: 0.5 });
+    </script>
+
+    <!-- Tilt JS Script -->
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".kotak"), {
+        max: 25,
+        speed: 400,
+        scale: 1.1,
+      });
     </script>
   </body>
 </html>
